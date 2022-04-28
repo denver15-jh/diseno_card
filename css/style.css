@@ -1,0 +1,218 @@
+:root{
+
+    /*Tipografía*/
+
+    --font-general: Arial, Helvetica, sans-serif;
+
+    /*Colores*/
+
+    --black: black;
+    --black-opacity-uno: rgba(89, 73, 30, 0.16);
+    --gray-light: #D3D3D3;
+    --gray: grey;
+    --white: white;
+    --green: green;
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-general);
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* CARD */
+
+.container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--gray-light);
+}
+
+.container-principal__titulo{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+
+.container-card{
+    width: 40rem;
+    min-width: 30rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+    box-shadow: 0 0.4rem 0.8rem var(--black-opacity-uno);
+}
+
+
+/* HEADER CARD */
+
+.container-card__container-header-card{
+    height: 20rem;
+}
+
+.container-card__container-imagen{
+    height: 20rem;
+}
+
+.container-card__imagen{
+    height: 20rem;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* MAIN CARD */
+
+/* Avatar */
+
+.container-card__container-avatar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card__container-foto-perfil{
+    position: absolute;
+}
+
+.container-card__foto-perfil{
+    border-radius: 50%;
+    border: 0.5rem solid var(--white);
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Nombre y profesión */
+
+.container-card__nombre-profesion{
+    margin: 7rem 0 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-card__nombre {
+    text-align: center;
+    margin: 0 1rem 0.5rem 1rem;
+    font-size: 2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 35rem;
+}
+
+.container-card__profesion{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 35rem;
+    color: var(--gray);
+
+}
+
+/* Enlaces: país y email */
+
+.container-card__container-pais-email{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-card__boton-country, .container-card__boton-email{
+    height: 5rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.container-card__icono, .container-card__boton-texto{
+    font-size: 1.5rem;
+}
+
+.container-card__boton-texto{
+    margin-left: 1rem;
+    color: var(--gray);
+}
+
+/* FOOTER CARD */
+
+/* Followers y Following */
+
+.container-card__container-followers-following{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-card__followers, .container-card__following{
+    height: 5rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: normal;
+    text-decoration: none;
+    color: var(--black);
+    border: 0.1rem solid var(--gray);
+}
+
+.container-card__n-followers, .container-card__followers-texto, .container-card__n-following, .container-card__following-texto{
+    font-size: 1.5rem;
+}
+
+.container-card__n-followers, .container-card__n-following{
+    font-weight: bold;
+}
+
+.container-card__followers-texto, .container-card__following-texto{
+    color: var(--gray);
+}
+
+/* Boton Follow */
+
+.container-card__boton-follow{
+    width: 100%;
+    height: 5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--green);
+    cursor: pointer;
+}

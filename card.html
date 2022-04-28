@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Práctica diseño de card">
+    <meta name="keywords" content="práctica, html, css, ">
+    <meta name="author" content="José Hernández" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/image/parque_central.jpeg"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Index</title>
+
+</head>
+<body>
+
+    <main class="container-principal">
+
+        <h1 class="container-principal__titulo">Diseño de card.</h1>
+
+        <article class="container-card">
+
+            <header class="container-card__container-header-card">
+                <figure class="container-card__container-imagen">
+                    <img class="container-card__imagen" src="assets/image/parque_central-2.jpeg" alt="Parque Central" title="Parque Central">
+                </figure>
+            </header>
+        
+            <section class="container-card__container-main-card">
+    
+                <section class="container-card__container-avatar">
+                    <figure class="container-card__container-foto-perfil">
+                        <img class="container-card__foto-perfil" src="assets/image/marjorie-de-sousa.jpeg" alt="Avatar" title="Avatar">
+                    </figure>
+                </section>
+    
+                <section class="container-card__nombre-profesion">
+                    <h1 class="container-card__nombre">Marjorie De Sousa</h1>
+                    <p class="container-card__profesion">Frontend Developer</p>
+                </section>
+    
+                <section class="container-card__container-pais-email">
+    
+                    <a class="container-card__boton-country" href="https://www.google.com/maps/place/Parque+Central,+Caracas+1015,+Distrito+Capital/@10.4983285,-66.9035805,17z/data=!3m1!4b1!4m5!3m4!1s0x8c2a592aee0562cd:0xa3663d691ead87bd!8m2!3d10.4983285!4d-66.9013918?hl=es" target="blank">
+                        <i class="fas fa-map-marker-alt container-card__icono"></i>
+                        <span class="container-card__boton-texto">Venezuela</span>
+                    </a>
+    
+                    <a class="container-card__boton-email" href="mailto:test@gmail.com?Subject=Interesado%20en%20contactarme" target="blank">
+                        <i class="fas fa-envelope container-card__icono"></i>
+                        <span class="container-card__boton-texto">Send Email</span>
+                    </a>
+                    
+                </section>
+    
+            </section>
+        
+            <footer class="container-card__footer-card">
+    
+                <section class="container-card__container-followers-following">
+    
+                    <div class="container-card__followers">
+                        <p class="container-card__n-followers">8.100</p>
+                        <p class="container-card__followers-texto">Followers</p>
+                    </div>
+    
+                    <div class="container-card__following">
+                        <p class="container-card__n-following">3.100</p>
+                        <p class="container-card__following-texto">Following</p>
+                    </div>
+    
+                </section>
+
+                <section class="container-card__container-form-boton-follow">
+
+                    <form class="container-card__form-follow" action="#">
+                        <button class="container-card__boton-follow" type="submit">Follow</button>
+                    </form>
+
+                </section>
+    
+            </footer>
+            
+        </article>
+
+    </main>
+    
+</body>
+</html>
