@@ -24,13 +24,11 @@
 html{
     font-size: 62.5%;
     font-family: var(--font-general);
-    height: 100%;
 }
 
 body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    background-color: var(--gray-light);
+    
 }
 
 
@@ -41,8 +39,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
     background-color: var(--gray-light);
+    margin: 5rem 0;
 }
 
 .container-principal__titulo{
@@ -52,8 +50,7 @@ body{
 }
 
 .container-card{
-    width: 40rem;
-    min-width: 30rem;
+    width: 30rem;
     margin: 1.5rem;
     border-radius: 1rem;
     background-color: var(--white);
@@ -121,7 +118,7 @@ body{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 35rem;
+    width: 25rem;
 }
 
 .container-card__profesion{
@@ -131,7 +128,7 @@ body{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 35rem;
+    width: 25rem;
     color: var(--gray);
 
 }
@@ -215,4 +212,23 @@ body{
     color: var(--white);
     background-color: var(--green);
     cursor: pointer;
+}
+
+/* MEDIAQUERIES */
+
+@media(min-width: 575px){
+    
+    .container-card{
+        width: 40rem;
+    }
+
+    .container-card__nombre {
+        width: 25rem;
+    }
+    
+    .container-card__profesion{
+        width: 35rem;
+    }
+
+
 }
