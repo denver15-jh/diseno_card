@@ -28,7 +28,6 @@ html{
 
 body{
     background-color: var(--gray-light);
-    
 }
 
 
@@ -223,12 +222,11 @@ body{
     }
 
     .container-card__nombre {
-        width: 25rem;
+        width: 35rem;
     }
     
     .container-card__profesion{
         width: 35rem;
     }
-
 
 }
