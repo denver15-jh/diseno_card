@@ -212,21 +212,3 @@ body{
     background-color: var(--green);
     cursor: pointer;
 }
-
-/* MEDIAQUERIES */
-
-@media(min-width: 575px){
-    
-    .container-card{
-        width: 40rem;
-    }
-
-    .container-card__nombre {
-        width: 35rem;
-    }
-    
-    .container-card__profesion{
-        width: 35rem;
-    }
-
-}
